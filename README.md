@@ -1,11 +1,16 @@
-# The Screaming Pixels: An Exploration of Sound Synthesis Through Image Sonification Using p5js.  
-## Image Sonification
+# The Screaming Pixels: An Exploration of Sound Synthesis Through Image Sonification Using p5js. 
+This project was created by Danny Clarke, Kritika Kharbanda, and Rosalie Lin for SCI 6483 - Artifacts as Media: Signals, Data, Information and Technology instructed by Jose Luis García del Castillo y López during the Spring 2022 semester at Harvard Graduate School of Design. 
 
-This project utilizes the p5.js library to create an interactive program that generates visual patterns and accompanying sound based on a random walker algorithm.
+![Image Alt Text](./asset/TheScreamingPixels.png)
+
+
+This project utilizes the p5.js library to create an interactive program that generates visual patterns to drive sound synthesis.
+
+This project marks the beginning of explorations in image sonification techniques. 
 
 ## Features
 
-- Generates visually appealing patterns using a random walker algorithm.
+- Generates visually appealing patterns using UI sliders.
 - Maps pixel values of an image to control the frequencies of oscillators for sound generation.
 - Interactive controls for starting and stopping the sound.
 - Ability to save the generated image.
@@ -13,8 +18,14 @@ This project utilizes the p5.js library to create an interactive program that ge
 ## Installation
 
 1. Clone the repository or download the source code files.
-2. Open the `index.html` file in a web browser.
-3. Select one of the four options:
+2. Install Visual Studio Code: Visit https://code.visualstudio.com.
+3. Download the installer: Click on the appropriate download button for your operating system (Windows, macOS, or Linux).
+4. Install the Live Server extension: Open Visual Studio Code, go to the Extensions view (by clicking on the square icon in the sidebar on the left or by pressing Ctrl+Shift+X), search for "Live Server" in the marketplace, and click "Install" to install the extension.
+5. Open your project folder: Open the folder that contains your index.html file in Visual Studio Code. You can do this by selecting "File" from the top menu and choosing "Open Folder" or by dragging the folder into the Visual Studio Code window.
+6. Open index.html: Locate and open your index.html file in the editor.
+7. Start the Live Server: Right-click anywhere inside the index.html editor window (or use the context menu by pressing Ctrl+Right Click on Windows/Linux or Cmd+Right Click on macOS), and select "Open with Live Server" from the options. Alternatively, you can use the shortcut Alt+L followed by Alt+O.
+8. Launch the webpage: The Live Server extension will launch a new browser window/tab automatically, displaying The Screaming Pixels index.html page.
+9. Select one of the four options:
   - Mouse The Music
   - Frame The Music
   - Maze The Music
@@ -62,6 +73,8 @@ The code and project structure are inspired by various examples and tutorials pr
 ## Code Descriptions
 
 ## Mouse The Music: sketch_v1_mouseHover.js  
+![Image Alt Text](./asset/mousethemusic.png)
+
 This code sets up a canvas and allows users to manipulate sliders to generate an image with changing colors and patterns, while also producing musical tones based on the color values of the mouse cursor within the image.
   
   - It declares and initializes variables, including sliders and oscillators, which will be used for controlling various parameters.      
@@ -77,6 +90,7 @@ This code sets up a canvas and allows users to manipulate sliders to generate an
   - The keyPressed() function is called when a key is pressed. If the key is 's' or 'S', the current canvas image is saved as a PNG file.
     
 ## Frame The Music: sketch_v2_frameLoop_basic.js
+![Image Alt Text](./asset/framethemusic.png)
 
 This code sets up a canvas with user interface elements for controlling visual and audio effects. It generates and displays processed images based on user-adjustable sliders and uses pixel values to control the frequency of three oscillators. 
 
@@ -93,12 +107,14 @@ The code uses three oscillators (osc, osc2, and osc3) to generate sound based on
   - This process repeats for each pixel in the image, allowing the image to control the sound synthesis.
 
 ## Maze The Music: sketch_v3_frameLoop_mazeBoundary.js
+![Image Alt Text](./asset/mazethemusic.png)
 
 The program employs a random walker algorithm to traverse through the pixels of the image. As the walker moves, it highlights each visited pixel. The RGB values of the highlighted pixel are mapped to oscillator frequencies, generating sound based on the image content. Three oscillators (osc, osc2, and osc3) are utilized, each assigned to a specific color channel (red, green, and blue) respectively.
 
 The program includes UI text that presents information about the RGB values of the current highlighted pixel. Users can interact with the visualization by clicking on the canvas to toggle the sound on and off. Additionally, pressing the 's' or 'S' key enables users to save the current frame as an image.
 
 ## Imagine The Music: sketch_v4_customImage.js
+![Image Alt Text](./asset/imaginethemusic.png)
 
 The program employs a random walker algorithm to traverse through the pixels of the image. As the walker moves, it highlights each visited pixel. The RGB values of the highlighted pixel are mapped to oscillator frequencies, generating sound based on the image content. Three oscillators (osc, osc2, and osc3) are utilized, each assigned to a specific color channel (red, green, and blue) respectively.
 
