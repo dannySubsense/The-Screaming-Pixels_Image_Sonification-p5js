@@ -186,6 +186,7 @@ function draw() {
     //Cursor movement 
     // (mouseX < 400 && mouseY < 300)
 
+
 }
 
 
@@ -219,6 +220,6 @@ function mousePressed() {
 // Save the image when key pressed
 function keyPressed() {
     if (key == 's' || key == 'S') {
-        img.save('frame_' + frameCount, 'png');
+      saveCanvas('frame_' + frameCount, 'png');
     }
 }
