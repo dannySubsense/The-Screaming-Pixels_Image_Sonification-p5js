@@ -1,4 +1,4 @@
-# The Screaming Pixels: An Exploration of Sound Synthesis Through Image Sonification using p5js.  
+# The Screaming Pixels: An Exploration of Sound Synthesis Through Image Sonification Using p5js.  
 ## Image Sonification
 
 This project utilizes the p5.js library to create an interactive program that generates visual patterns and accompanying sound based on a random walker algorithm.
