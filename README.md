@@ -55,6 +55,8 @@ A new page will open for each option.
 
 This project relies on the following dependencies:
 - p5.js: A JavaScript library for creative coding.
+- p5.sound.js: A p5.js sound library that extends p5 with Web Audio functionality including audio input, playback, analysis, and synthesis.
+These libraries are included in the code package and are automatically loaded when the index.html file is launched.
 
 ## Credits
 
